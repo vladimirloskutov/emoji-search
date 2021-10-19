@@ -3,7 +3,7 @@ import EmojiResultsRow from './EmojiResultsRow';
 
 const EmojiResults = () => (
   <div>
-    <EmojiResultsRow />
+    <EmojiResultsRow title="Grinning" symbol="😀" />
   </div>
 );
 

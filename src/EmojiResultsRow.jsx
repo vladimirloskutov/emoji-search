@@ -1,15 +1,32 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const EmojiResultsRow = () => (
-  <div>
-    <img
-      alt="Grinning"
-      src="//cdn.jsdelivr.net/emojione/assets/png/1f600.png"
-    />
-    <span>
-      Grinning
-    </span>
-  </div>
-);
+const EmojiResultsRow = (props) => {
+  const { title, symbol } = props;
+  const codePointHex = symbol.codePointAt(0).toString(16);
+  const src = `//cdn.jsdelivr.net/emojione/assets/png/${codePointHex}.png`;
+
+  return (
+    <div>
+      <img
+        alt={title}
+        src={src}
+      />
+      <span>
+        {title}
+      </span>
+    </div>
+  );
+};
+
+EmojiResultsRow.propTypes = {
+  title: PropTypes.string,
+  symbol: PropTypes.string,
+};
+
+EmojiResultsRow.defaultProps = {
+  title: '',
+  symbol: '',
+};
 
 export default EmojiResultsRow;
