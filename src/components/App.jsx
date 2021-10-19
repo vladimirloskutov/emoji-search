@@ -4,22 +4,30 @@ import SearchInput from './SearchInput';
 import EmojiResults from './EmojiResults';
 import emojiList from '../utils/emojiList.json';
 
-const App = () => {
-  const handleSearchChange = (e) => {
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      filteredEmoji: emojiList,
+    };
+  }
+
+  handleSearchChange = (e) => {
     console.log(e.target.value);
   };
 
-  return (
-    <div>
-      <Header />
-      <SearchInput
-        textChange={handleSearchChange}
-      />
-      <EmojiResults
-        emojiData={emojiList}
-      />
-    </div>
-  );
-};
-
-export default App;
+  render() {
+    const { filteredEmoji } = this.state;
+    return (
+      <div>
+        <Header />
+        <SearchInput
+          textChange={this.handleSearchChange}
+        />
+        <EmojiResults
+          emojiData={filteredEmoji}
+        />
+      </div>
+    );
+  }
+}
