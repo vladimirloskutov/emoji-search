@@ -1,9 +1,9 @@
 import React from 'react';
-import EmojiResultRow from './EmojiResultRow';
+import EmojiResultsRow from './EmojiResultsRow';
 
 const EmojiResults = () => (
   <div>
-    <EmojiResultRow />
+    <EmojiResultsRow />
   </div>
 );
 

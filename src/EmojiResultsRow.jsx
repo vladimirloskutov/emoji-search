@@ -1,6 +1,6 @@
 import React from 'react';
 
-const EmojiResultRow = () => (
+const EmojiResultsRow = () => (
   <div>
     <img
       alt="Grinning"
@@ -12,4 +12,4 @@ const EmojiResultRow = () => (
   </div>
 );
 
-export default EmojiResultRow;
+export default EmojiResultsRow;
