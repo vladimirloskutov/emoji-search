@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SearchInput = () => (
-  <div />
+  <input />
 );
 
 export default SearchInput;
