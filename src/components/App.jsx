@@ -2,13 +2,13 @@ import React from 'react';
 import Header from './Header';
 import SearchInput from './SearchInput';
 import EmojiResults from './EmojiResults';
-import emojiList from '../utils/emojiList.json';
+import filterEmoji from '../utils/filterEmoji';
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      filteredEmoji: emojiList,
+      filteredEmoji: filterEmoji('', 10),
     };
   }
 
