@@ -1,7 +1,9 @@
 import React from 'react';
 
 const Header = () => (
-  <div />
+  <header>
+    Emoji Search
+  </header>
 );
 
 export default Header;
