@@ -10,6 +10,7 @@ const SearchInput = (props) => {
 
   return (
     <input
+      className="component-search-input"
       onChange={handleChange}
     />
   );

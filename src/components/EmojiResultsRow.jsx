@@ -7,7 +7,7 @@ const EmojiResultsRow = (props) => {
   const src = `//cdn.jsdelivr.net/emojione/assets/png/${codePointHex}.png`;
 
   return (
-    <div>
+    <div className="component-emoji-results-row">
       <img
         alt={title}
         src={src}

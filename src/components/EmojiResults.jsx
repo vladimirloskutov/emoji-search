@@ -6,7 +6,7 @@ const EmojiResults = (props) => {
   const { emojiData } = props;
 
   return (
-    <div>
+    <div className="component-emoji-results">
       {
         emojiData.map((emoji) => (
           <EmojiResultsRow
