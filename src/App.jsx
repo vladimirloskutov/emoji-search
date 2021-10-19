@@ -1,10 +1,13 @@
 import React from 'react';
+import Header from './Header';
+import SearchInput from './SearchInput';
+import EmojiResults from './EmojiResults';
 
 const App = () => (
-  <div className="App">
-    <div className="App-header">
-      <h2>Emoji Search</h2>
-    </div>
+  <div>
+    <Header />
+    <SearchInput />
+    <EmojiResults />
   </div>
 );
 
