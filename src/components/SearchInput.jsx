@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './SearchInput.css';
 
 const SearchInput = (props) => {
   const { textChange } = props;

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import EmojiResultsRow from './EmojiResultsRow';
+import './EmojiResults.css';
 
 const EmojiResults = (props) => {
   const { emojiData } = props;
