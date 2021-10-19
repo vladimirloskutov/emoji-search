@@ -10,10 +10,13 @@ const SearchInput = (props) => {
   };
 
   return (
-    <input
-      className="component-search-input"
-      onChange={handleChange}
-    />
+    <div className="component-search-input">
+      <div>
+        <input
+          onChange={handleChange}
+        />
+      </div>
+    </div>
   );
 };
 
