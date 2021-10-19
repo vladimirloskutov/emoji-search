@@ -13,7 +13,9 @@ export default class App extends React.Component {
   }
 
   handleSearchChange = (e) => {
-    console.log(e.target.value);
+    this.setState({
+      filteredEmoji: filterEmoji(e.target.value, 10),
+    });
   };
 
   render() {
