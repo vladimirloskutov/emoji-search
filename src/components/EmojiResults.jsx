@@ -11,7 +11,7 @@ const EmojiResults = (props) => {
       {
         emojiData.map((emoji) => (
           <EmojiResultsRow
-            key={emoji.symbol}
+            key={emoji.title}
             symbol={emoji.symbol}
             title={emoji.title}
           />
