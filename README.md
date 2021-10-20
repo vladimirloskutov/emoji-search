@@ -1,7 +1,7 @@
 Emoji Search
 ---
 
-Example: [vladimirloskutov.github.io/emoji-search/](vladimirloskutov.github.io/emoji-search/)
+Example: [https://vladimirloskutov.github.io/emoji-search/](https://vladimirloskutov.github.io/emoji-search/)
 
 Install
 ---
